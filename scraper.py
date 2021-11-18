@@ -1,48 +1,67 @@
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
-
+import argparse
+# Import urls From Url File
+from urls import urls
 
 # extract(page): Means we will be Inputing the page we want into the url
-def extract():
+def extract(url):
 
-    headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36'}
-
-    # Url We Shall Be Scraping
-    url = f'https://www.ooyyo.com/germany/used-cars-for-sale/c=CDA31D7114D3854F111BFE6FAA651551EDA2/'
-    r = requests.get(url, headers)
+    # Url Instance Is Parsed
+    r = requests.get(url, {})
+    # Creates An Instance Of Beautiful Soup & Initialize
     soup = BeautifulSoup(r.content, 'html.parser')
     return soup
 
 def transform(soup):
+    # Finding a tag (<a> </a>) with class (car-card-1) In Initialized Instance
     divs = soup.find_all('a', class_ = 'car-card-1')
+
+    # Looping Is Done To Find Contents Found Inside a tag (<a> </a>)
     for item in divs:
+        # Looping Trough a tag contents and we strip the data inside the div's
         Make = item.find('div', class_ = 'mob-heading').text.strip()
-        
+        Price = item.find('div', class_ = 'price-info').text.strip()
         Location = item.find('div', class_ = 'mob-location').text.strip()
         Milage = item.find('div', class_ = 'mileage').text.strip().replace('\n', '')
         Description = item.find('div', class_ = 'description').text.strip().replace('\n', '')
 
-        # Car Dictionary
+        # Car 
         car = {
             'Make' : Make,
+            'Price' : Price,
             'Location' : Location,
             'Milage' : Milage,
             'Description' : Description
         }
 
-        # Appended Dictionary To Car List
+        # Appended To Car List
         carlist.append(car)
     return
+
+
+def parseUrl(url):
+    c = extract(url)
+    transform(c)
+    # Return Data In A Tubular Manner (Rows & Columns)
+    df = pd.DataFrame(carlist)
+    # Data Is Stored In a Csv File
+    df.to_csv('Cars.csv')
 
 # Car List
 carlist = []
 
-c = extract()
-transform(c)
+# Get Args Parsed Inside Script
+parser = argparse.ArgumentParser(description='Process some integers.')
+parser.add_argument('string', metavar='N', type=str, nargs='+',
+                    help='an integer for the accumulator')
+args = parser.parse_args()
 
-df = pd.DataFrame(carlist)
+# Filter String From Urls Array 
+filter_object = filter(lambda a: args.string[0] in a, urls)
 
-print(df.head())
+parseUrl(list(filter_object)[0])
 
-df.to_csv('Cars.csv')
+
+

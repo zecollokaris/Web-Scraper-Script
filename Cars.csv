@@ -1,91 +1,76 @@
-,Make,Location,Milage,Description
-0,"2017
-Citroen
-C4 Cactus
-1.2","Osnabrück,
-Lower Saxony,
-Germany","Mi:37,690 km","Hatchback, Petrol, Beige, abs, air conditioning, airbag, xenon headlights, alloy wheels, central locking, cruise control, fog lights, gps, immobilizer, leather, metallic paint, park assist, power steering, service history, sunroof"
-1,"2020
-Kia
-Rio
-1.0 T-GDi","Quakenbrück,
-Lower Saxony,
-Germany","Mi:12,500 km","Sedan, Petrol, Green, abs, air conditioning, airbag, alloy wheels, central locking, cruise control, electric windows, fog lights, gps, immobilizer, leather, park assist, power steering, sunroof"
-2,"2015
-Kia
-Optima
-2.4 Hybrid","Waldshut Tiengen,
-Baden-Württemberg,
-Germany","Mi:64,600 km","Sedan, Hybrid, Silver, abs, air conditioning, airbag, xenon headlights, central locking, cruise control, electric windows, fog lights, gps, immobilizer, leather, park assist, power steering, sunroof"
-3,"2017
-Kia
-Sportage
-2.0 CRDi","Quakenbrück,
-Lower Saxony,
-Germany","Mi: 94,897 km","Crossover, Diesel, Black, abs, air conditioning, airbag, xenon headlights, alloy wheels, central locking, cruise control, electric windows, fog lights, gps, immobilizer, leather, park assist, power steering, sunroof"
-4,"2016
-Kia
-Niro
-1.6","Quakenbrück,
-Lower Saxony,
-Germany","Mi:81,950 km","Suv, Petrol, Black, abs, air conditioning, airbag, xenon headlights, alloy wheels, central locking, cruise control, electric windows, fog lights, gps, immobilizer, leather, park assist, power steering"
-5,"2018
-Kia
-Stonic
-1.0 T-GDi","Quakenbrück,
-Lower Saxony,
-Germany","Mi:53,405 km","Crossover, Petrol, Black, abs, air conditioning, airbag, alloy wheels, central locking, cruise control, electric windows, fog lights, gps, immobilizer, leather, park assist, power steering"
-6,"2017
-Kia
-Stonic
-1.4","Augsburg,
-Bavaria,
-Germany","Mi: 35,000 km","Crossover, Petrol, Black, abs, air conditioning, airbag, alloy wheels, central locking, cruise control, electric windows, fog lights, gps, immobilizer, leather, metallic paint, park assist, power steering, service history"
-7,"2015
-Mercedes Benz
-A-Class
-250 Sport","Viernheim,
-Hesse,
-Germany","Mi:69,500 km","Sedan, Petrol, White, abs, air conditioning, airbag, alloy wheels, central locking, cruise control, gps, immobilizer, leather, park assist, power steering, service history"
-8,"2020
-Volvo
-V90
-2.0 T6 AWD","Wuppertal,
-North Rhine-Westphalia,
-Germany","Mi:4,750 km","Wagon, Petrol, Black, abs, air conditioning, airbag, xenon headlights, alloy wheels, central locking, cruise control, fog lights, gps, immobilizer, park assist, power steering"
-9,"2019
-Mitsubishi
-Eclipse Cross
-1.5","Viernheim,
-Hesse,
-Germany","Mi:39,300 km","Crossover, Petrol, Black,  abs, air conditioning, airbag, alloy wheels, central locking, cruise control, fog lights, immobilizer, park assist, power steering, service history"
-10,"2016
-Kia
-Sorento
-2.2 CRDi","Rüsselsheim,
-Hesse,
-Germany","Mi:109,000 km","Suv, Diesel, Green, abs, air conditioning, airbag, xenon headlights, alloy wheels, central locking, cruise control, electric windows, fog lights, gps, immobilizer, leather, park assist, power steering, service history, sunroof"
-11,"2019
-Opel
-Crossland X
-1.2","Oschersleben,
-Saxony-Anhalt,
-Germany","Mi:6,364 km","Suv, Petrol, Blue, abs, air conditioning, airbag, alloy wheels, central locking, cruise control, fog lights, gps, immobilizer, leather, park assist, power steering, service history, sunroof"
-12,"2018
-Opel
-Crossland X
-1.2","Schwerin,
-Mecklenburg-Western Pomerania,
-Germany","Mi:7,204 km","Suv, Petrol, Black, abs, air conditioning, airbag, alloy wheels, cruise control, gps, immobilizer, leather, park assist, power steering, service history"
-13,"2017
-Opel
-Astra
-1.6 Turbo","Rüsselsheim,
-Hesse,
-Germany","Mi:61,000 km","Wagon, Petrol, Beige, abs, air conditioning, airbag, xenon headlights, alloy wheels, central locking, cruise control, electric windows, fog lights, gps, immobilizer, leather, metallic paint, park assist, power steering, service history, sunroof"
-14,"2019
+,Make,Price,Location,Milage,Description
+0,"2007
 Ford
-Ranger
-2.0 EcoBlue","Troisdorf,
-North Rhine-Westphalia,
-Germany","Mi:9,989 km","Pickup, Diesel, Orange, abs, air conditioning, airbag, xenon headlights, alloy wheels, cd player, central locking, cruise control, fog lights, gps, immobilizer, leather, park assist, power steering, service history"
+S-Max
+2.0 TDCi",,"Okna,
+Czech Republic","Mi:184,231 km","Mpv, Diesel, Black, abs, air conditioning, airbag, alarm, cd player, central locking, cruise control, fog lights, immobilizer, metallic paint, power steering"
+1,"2002
+Audi
+A8
+4.2",,"Okna,
+Czech Republic","Mi:323,000 km","Sedan, Petrol, Gray, abs, air conditioning, airbag, alarm, cd player, cruise control, fog lights, immobilizer, leather, metallic paint, power steering, sunroof"
+2,"2017
+Volvo
+S90
+2.0",,"Okna,
+Czech Republic","Mi:205,236 km","Sedan, Diesel, Silver, abs, air conditioning, airbag, alarm, cd player, central locking, cruise control, fog lights, gps, immobilizer, leather, metallic paint, power steering"
+3,"2015
+Volkswagen
+Tiguan
+2.0 TDI",,"Tábor,
+Czech Republic","Mi:50,207 km","Crossover, Diesel, Brown, abs, air conditioning, airbag, cd player, central locking, cruise control, fog lights, gps, immobilizer, metallic paint, power steering, sunroof"
+4,"2018
+Volkswagen
+Passat
+1.4 TSI",,"Okna,
+Czech Republic","Mi:44,588 km","Sedan, Petrol, Silver, abs, air conditioning, airbag, alarm, cd player, central locking, cruise control, fog lights, gps, immobilizer, metallic paint, power steering"
+5,"2002
+Renault
+Vel Satis
+3.5",,"Provodov Šonov,
+Czech Republic","Mi:320,000 km","Sedan, Petrol, Gray, abs, air conditioning, airbag, cd player, central locking, cruise control, fog lights, gps, immobilizer, leather, metallic paint, power steering, sunroof"
+6,"2009
+Chrysler
+Grand Voyager
+2.8",,"Okna,
+Czech Republic","Mi:173,746 km","Mpv, Diesel, Black, abs, air conditioning, airbag, alarm, cd player, central locking, cruise control, fog lights, immobilizer, metallic paint, power steering"
+7,"2018
+Ford
+Kuga
+1.5",,"Provodov Šonov,
+Czech Republic","Mi:123,100 km","Suv, Petrol, Black, abs, air conditioning, airbag, cd player, central locking, cruise control, fog lights, gps, immobilizer, leather, metallic paint, power steering, sunroof"
+8,"2007
+Ford
+Focus
+1.6",,"Okna,
+Czech Republic","Mi:296,000 km","Hatchback, Petrol, Black, abs, air conditioning, airbag, alarm, cd player, central locking, cruise control, fog lights, immobilizer, metallic paint, power steering"
+9,"2007
+Hyundai
+Terracan
+2.9 CRDi",,"Slaný,
+Czech Republic","Mi:139,000 km","Suv, Diesel, Black, abs, air conditioning, airbag, alarm, cd player, central locking, fog lights, leather, metallic paint, power steering"
+10,"2005
+Mercedes Benz
+Ml-Class
+270 CDI",,"Okna,
+Czech Republic","Mi:224,905 km","Suv, Diesel, Silver, abs, air conditioning, airbag, cd player, central locking, cruise control, fog lights, gps, immobilizer, leather, metallic paint, power steering, sunroof"
+11,"2006
+Peugeot
+607
+2.2 HDi",,"Ústí Nad Labem,
+Czech Republic","Mi:247,000 km","Sedan, Diesel, Gray, abs, air conditioning, airbag, cd player, central locking, cruise control, fog lights, gps, immobilizer, leather, metallic paint, power steering, sunroof"
+12,"2009
+Toyota
+Rav4
+2.2",,"Praha,
+Czech Republic","Mi:229,858 km","Suv, Diesel, Brown, abs, air conditioning, airbag, alarm, cd player, central locking, cruise control, fog lights, gps, immobilizer, leather, metallic paint, power steering, sunroof"
+13,"2016
+Subaru
+Levorg
+1.6",,"Provodov Šonov,
+Czech Republic","Mi:60,300 km","Wagon, Petrol, Blue, abs, air conditioning, airbag, cd player, central locking, cruise control, fog lights, gps, immobilizer, leather, metallic paint, power steering, sunroof"
+14,"2006
+Porsche
+Cayenne
+4.5 Turbo",,"Okna,
+Czech Republic","Mi:187,344 km","Suv, Petrol, Black, abs, air conditioning, airbag, cd player, central locking, cruise control, fog lights, gps, immobilizer, leather, metallic paint, power steering, sunroof"
