@@ -2,6 +2,8 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 import argparse
+from selenium import webdriver
+
 # Import urls From Url File
 from urls import urls
 
@@ -26,6 +28,7 @@ def transform(soup):
         Location = item.find('div', class_ = 'mob-location').text.strip()
         Milage = item.find('div', class_ = 'mileage').text.strip().replace('\n', '')
         Description = item.find('div', class_ = 'description').text.strip().replace('\n', '')
+        Link = driver.find_element_by_xpath('a', class_ = 'car-card-1').click()
 
         # Car 
         car = {
@@ -33,7 +36,8 @@ def transform(soup):
             'Price' : Price,
             'Location' : Location,
             'Milage' : Milage,
-            'Description' : Description
+            'Description' : Description,
+            'Link' : Link
         }
 
         # Appended To Car List
