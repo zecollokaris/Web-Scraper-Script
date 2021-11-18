@@ -17,10 +17,10 @@ def extract():
 def transform(soup):
     divs = soup.find_all('a', class_ = 'car-card-1')
     for item in divs:
-        make = item.find('div', class_ = 'mob-heading').text.strip().replace('\n', '')
-        location = item.find('div', class_ = 'mob-location').text.strip()
-        milage = item.find('div', class_ = 'mileage').text.strip().replace('\n', '')
-        description = item.find('div', class_ = 'description').text.strip().replace('\n', '')
+        Make = item.find('div', class_ = 'mob-heading').text.strip()
+        Location = item.find('div', class_ = 'mob-location').text.strip()
+        Milage = item.find('div', class_ = 'mileage').text.strip().replace('\n', '')
+        Description = item.find('div', class_ = 'description').text.strip().replace('\n', '')
 
         # Car Dictionary
         car = {
