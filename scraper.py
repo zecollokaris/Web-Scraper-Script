@@ -2,10 +2,13 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 import argparse
-from selenium import webdriver
 
 # Import urls From Url File
 from urls import urls
+
+counter = 0
+
+baseUrl = 'https://www.ooyyo.com/';
 
 # extract(page): Means we will be Inputing the page we want into the url
 def extract(url):
@@ -16,7 +19,9 @@ def extract(url):
     soup = BeautifulSoup(r.content, 'html.parser')
     return soup
 
-def transform(soup):
+def transform(soup, url):
+    global counter
+    counter = 0
     # Finding a tag (<a> </a>) with class (car-card-1) In Initialized Instance
     divs = soup.find_all('a', class_ = 'car-card-1')
 
@@ -28,31 +33,38 @@ def transform(soup):
         Location = item.find('div', class_ = 'mob-location').text.strip()
         Milage = item.find('div', class_ = 'mileage').text.strip().replace('\n', '')
         Description = item.find('div', class_ = 'description').text.strip().replace('\n', '')
-        driver.get(base_url)
-        Link = driver.find_element_by_xpath('a', class_ = 'car-card-1').click()
+        global baseUrl
+        # Car
 
-        # Car 
+        global extract
+        page = extract(baseUrl +  item['href']);
+        contact_button = page.find('a', id='contactSeller', href=True);
+        Link = contact_button['href'];
+
+        print(Make + '\n\n')
+
         car = {
             'Make' : Make,
-            'Price' : Price,
             'Location' : Location,
             'Milage' : Milage,
             'Description' : Description,
-            'Link' : Link,
+            'Contact' : Link
         }
+
 
         # Appended To Car List
         carlist.append(car)
+        counter= counter + 1;
     return
 
 
 def parseUrl(url):
     c = extract(url)
-    transform(c)
+    transform(c, url)
     # Return Data In A Tubular Manner (Rows & Columns)
     df = pd.DataFrame(carlist)
     # Data Is Stored In a Csv File
-    df.to_csv('Cars.csv')
+    df.to_csv('Cars.csv', encoding='utf-8')
 
 # Car List
 carlist = []
@@ -63,10 +75,8 @@ parser.add_argument('string', metavar='N', type=str, nargs='+',
                     help='an integer for the accumulator')
 args = parser.parse_args()
 
-# Filter String From Urls Array 
+# Filter String From Urls Array
 filter_object = filter(lambda a: args.string[0] in a, urls)
 
-parseUrl(list(filter_object)[0])
-
-
-
+for url in list(filter_object):
+    parseUrl(url)
