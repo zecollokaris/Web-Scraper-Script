@@ -34,8 +34,7 @@ def transform(soup, url):
         Milage = item.find('div', class_ = 'mileage').text.strip().replace('\n', '')
         Description = item.find('div', class_ = 'description').text.strip().replace('\n', '')
         global baseUrl
-        # Car
-
+        
         global extract
         page = extract(baseUrl +  item['href']);
         contact_button = page.find('a', id='contactSeller', href=True);
