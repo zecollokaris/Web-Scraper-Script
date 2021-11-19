@@ -28,6 +28,7 @@ def transform(soup):
         Location = item.find('div', class_ = 'mob-location').text.strip()
         Milage = item.find('div', class_ = 'mileage').text.strip().replace('\n', '')
         Description = item.find('div', class_ = 'description').text.strip().replace('\n', '')
+        driver.get(base_url)
         Link = driver.find_element_by_xpath('a', class_ = 'car-card-1').click()
 
         # Car 
@@ -37,7 +38,7 @@ def transform(soup):
             'Location' : Location,
             'Milage' : Milage,
             'Description' : Description,
-            'Link' : Link
+            'Link' : Link,
         }
 
         # Appended To Car List
