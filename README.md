@@ -62,3 +62,62 @@ sudo apt-get install python3.6
 3. **[Pandas DataFrame](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)**
 
 **Pandas DataFrame** is **two-dimensional size-mutable, potentially heterogeneous tabular data structure with labeled axes** (rows and columns).
+
+
+## **SETUP/INSTALLATION!**
+
+
+1. You will need **Internet connection**.
+
+2. You need to get into the **Webscraper Script Repository**.
+
+3. From there you can access the **Webscraper**.
+
+4. **Clone** the project.
+
+5. **get into project folder** (cd into project).
+
+6. If you have all the **Pre-requisites**
+
+7. Open your **Code Editor and run the Application**.
+
+
+# **HOW TO RUN.**
+
+**To work With this WebScrapper**
+
+1. **Make sure your inside folder containing script.**
+
+2. Initialize the Python Script 
+
+    ```
+    python3 scraper.py germany
+    ```
+
+3. **Note** to **Initialize the Script there has to always be Country args parsed**. Not every Country is Included so the **Custom List** is added below.
+
+    ```
+    
+    python3 scraper.py austria
+    python3 scraper.py belgium
+    python3 scraper.py bulgaria
+    python3 scraper.py czech+republic
+    python3 scraper.py denmark
+    python3 scraper.py finland
+    python3 scraper.py france
+    python3 scraper.py germany
+    python3 scraper.py greece
+    python3 scraper.py hungary
+    python3 scraper.py italy
+    python3 scraper.py latvia
+    python3 scraper.py netherlands
+    python3 scraper.py poland
+    python3 scraper.py portugal
+    python3 scraper.py romania
+    python3 scraper.py russia
+
+    ```
+
+4. From there the it will **prompt output of a an Excel Workbook (.xlsx file) where each of these attributes are written in separate columns.**
+
+5. You are now ready **THANK YOU :-)**
